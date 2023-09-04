@@ -14,3 +14,12 @@ window.addEventListener('scroll', function () {
         button.classList.add('hidden');
     }
 });
+
+function scrollToMenu() {
+    const menuSection = document.getElementById('menu');
+    if (menuSection) {
+        menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+  
