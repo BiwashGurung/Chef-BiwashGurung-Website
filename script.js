@@ -23,7 +23,7 @@ function scrollToMenu() {
     }
 }
 
-
+// Code for FooterYear
 document.querySelector("footer .footer-year").textContent =
 	new Date().getFullYear();
 
