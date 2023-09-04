@@ -27,4 +27,14 @@ function scrollToMenu() {
 document.querySelector("footer .footer-year").textContent =
 	new Date().getFullYear();
 
+
+    
+
+
+
+
+
+
+    
+
   
