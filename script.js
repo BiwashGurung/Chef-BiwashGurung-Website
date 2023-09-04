@@ -1,4 +1,4 @@
-// Code For GoToUp Buttons
+// Code For GoToUp Button
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -15,6 +15,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// Code For scrollToMEnu
 function scrollToMenu() {
     const menuSection = document.getElementById('menu');
     if (menuSection) {
