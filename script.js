@@ -31,8 +31,42 @@ document.querySelector("footer .footer-year").textContent =
 
 
 
+//Add to cart list
+    let cart = [];
 
+    function addToCart(itemName, itemPrice) {
+      const item = {
+        name: itemName,
+        price: itemPrice,
+      };
     
+      cart.push(item);
+    
+      // Update the cart slider
+      updateCartSlider();
+    }
+    
+    function updateCartSlider() {
+      const cartSlider = document.getElementById('cartSlider');
+      const cartItemsList = document.getElementById('cartItems');
+    
+      // Clear the existing cart items
+      cartItemsList.innerHTML = '';
+    
+      // Add cart items to the list
+      cart.forEach((item) => {
+        const cartItem = document.createElement('li');
+        cartItem.textContent = `${item.name} - NPR ${item.price}`;
+        cartItemsList.appendChild(cartItem);
+      });
+    
+      // Toggle the cart slider visibility
+      if (cart.length > 0) {
+        cartSlider.style.transform = 'translateX(0)';
+      } else {
+        cartSlider.style.transform = 'translateX(100%)';
+      }
+    }
 
 
     
