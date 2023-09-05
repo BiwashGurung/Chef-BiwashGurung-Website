@@ -188,7 +188,7 @@ function updateCartSlider() {
   }
 
 
-
+//Open the add to cart
 // Get references to the cart slider and the shopping cart icon
 const cartSlider = document.getElementById('cartSlider');
 const openCartIcon = document.getElementById('open-cart');
