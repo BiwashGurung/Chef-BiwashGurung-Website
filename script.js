@@ -1,3 +1,5 @@
+ // Initialize Font Awesome 
+ window.FontAwesomeConfig = { autoReplaceSvg: 'nest' }
 // Code For GoToUp Button
 function scrollToTop() {
     window.scrollTo({
