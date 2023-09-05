@@ -189,7 +189,24 @@ function updateCartSlider() {
 
 
 
-  
+// Get references to the cart slider and the shopping cart icon
+const cartSlider = document.getElementById('cartSlider');
+const openCartIcon = document.getElementById('open-cart');
+
+// Add a click event listener to the shopping cart icon
+openCartIcon.addEventListener('click', toggleCartSlider);
+
+// Function to toggle the cart slider visibility
+function toggleCartSlider() {
+  if (cartSlider.style.transform === 'translateX(0)') {
+    // If the cart slider is already open, close it
+    cartSlider.style.transform = 'translateX(100%)';
+  } else {
+    // If the cart slider is closed, open it
+    cartSlider.style.transform = 'translateX(0)';
+  }
+}
+
     
 
   
