@@ -470,20 +470,22 @@
     </table>
 
     <!-- code for the discount code input -->
-    <input
+    <div class="flex items-center">
+      <input
         type="text"
         id="discountCode"
         placeholder="Enter discount code"
-        class="border rounded-md p-2 w-full mt-2"
-    />
-
-    <!--  code for the "Apply Discount" button -->
-    <button
-  onclick="applyDiscountCode()"
-  class="bg-transparent border-2 border-black text-black hover:bg-gray-200 hover:border-black-700 hover:text-black-700 font-bold py-1 px-2 rounded-none mt-2"
->
-  Apply Discount
-</button>
+        class="border rounded-md p-2 w-full"
+      />
+    
+      <button
+        onclick="applyDiscountCode()"
+        class="bg-transparent border-2 border-black text-black hover:bg-gray-200 hover:border-black-700 hover:text-black-700 font-bold py-1 px-2 ml-2"
+      >
+        Apply Discount
+      </button>
+    </div>
+    
 
     <table class="w-full border-collapse border border-gray-300 mt-4">
       <tbody>
