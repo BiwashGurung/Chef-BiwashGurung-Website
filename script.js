@@ -164,6 +164,8 @@ function updateCartSlider() {
   }
   
 
+
+  
     
 
   
