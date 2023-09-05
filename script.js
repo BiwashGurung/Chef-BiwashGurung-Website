@@ -122,6 +122,38 @@ const Cart = [];
     }
   }
 
+
+  function updateCartSlider() {
+    const cartSlider = document.getElementById('cartSlider');
+    const cartItemsList = document.getElementById('cartItems');
+    const grandTotalSpan = document.getElementById('grandTotal');
+  
+    // Clear the existing cart items
+    cartItemsList.innerHTML = '';
+  
+    let grandTotal = 0; // Initialize the grand total
+  
+    // Add cart items to the list and calculate the grand total
+    cart.forEach((item) => {
+      const cartItem = document.createElement('li');
+      cartItem.textContent = `${item.name} - NPR ${item.price}`;
+      cartItemsList.appendChild(cartItem);
+  
+      grandTotal += item.price; // Add item price to the grand total
+    });
+  
+    // Update the grand total display
+    grandTotalSpan.textContent = grandTotal;
+    
+    // Toggle the cart slider visibility
+    if (cart.length > 0) {
+      cartSlider.style.transform = 'translateX(0)';
+    } else {
+      cartSlider.style.transform = 'translateX(100%)';
+    }
+  }
+  
+
     
 
   
