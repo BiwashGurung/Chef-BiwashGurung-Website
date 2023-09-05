@@ -207,7 +207,7 @@ function toggleCartSlider() {
   }
 }
 
-
+//Code For Discount
 const discountCode = document.getElementById('discountCode').value;
 if (discountCode === 'Biwash07') {
     // Apply a 15% discount if the code is valid
