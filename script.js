@@ -83,12 +83,7 @@ const Cart = [];
     updateCartSlider();
   }
 
-  function clearCartItem(index) {
-    if (index >= 0 && index < cart.length) {
-      cart.splice(index, 1); // Remove the item at the specified index
-      updateCartSlider();
-    }
-  }
+ 
 
   function closeCart() {
     const cartSlider = document.getElementById('cartSlider');
@@ -123,7 +118,7 @@ const Cart = [];
   }
 
 // Code For GrandTotal
-  function updateCartSlider() {
+function updateCartSlider() {
     const cartSlider = document.getElementById('cartSlider');
     const cartItemsList = document.getElementById('cartItems');
     const grandTotalSpan = document.getElementById('grandTotal');
@@ -134,9 +129,24 @@ const Cart = [];
     let grandTotal = 0; // Initialize the grand total
   
     // Add cart items to the list and calculate the grand total
-    cart.forEach((item) => {
+    cart.forEach((item, index) => {
       const cartItem = document.createElement('li');
       cartItem.textContent = `${item.name} - NPR ${item.price}`;
+  
+      // Add a "Clear" button for each item
+      const clearButton = document.createElement('button');
+      clearButton.textContent = 'Clear';
+      clearButton.className = 'ml-2 text-gray-500 hover:text-gray-700';
+      clearButton.onclick = () => {
+        // Remove the item from the cart when the "Clear" button is clicked
+        cart.splice(index, 1);
+        // Update the cart slider
+        updateCartSlider();
+      };
+  
+      // Append the "Clear" button to the cart item
+      cartItem.appendChild(clearButton);
+  
       cartItemsList.appendChild(cartItem);
   
       grandTotal += item.price; // Add item price to the grand total
@@ -144,7 +154,7 @@ const Cart = [];
   
     // Update the grand total display
     grandTotalSpan.textContent = grandTotal;
-    
+  
     // Toggle the cart slider visibility
     if (cart.length > 0) {
       cartSlider.style.transform = 'translateX(0)';
