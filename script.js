@@ -164,8 +164,12 @@ function updateCartSlider() {
   }
   
 
+// Thankyou Alert Message
+  function showThankYouMessage() {
+    const grandTotal = document.getElementById('grandTotal').textContent;
+    alert(`Thank you for choosing us! Your order total is NPR ${grandTotal}. We hope you'll enjoy our delicious dishes.`);
+  }
 
- 
 
 
   
