@@ -121,7 +121,12 @@
         <h3 class="mb-4 text-xl font-bold text-white md:text-2xl lg:text-4xl"> and Get a 15% Discount</h3>
 
         <div class="mt-auto">
-          <a href="#menu" class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">Use now</a>
+          <button
+            id="copyDiscountCodeBtn"
+            class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
+          >
+            Copy now
+          </button>
         </div>
       </div>
       <!-- content - end -->
@@ -471,21 +476,19 @@
 
     <!-- code for the discount code input -->
     <div class="flex items-center">
-      <input
-        type="text"
-        id="discountCode"
-        placeholder="Discount code"
-        class="border rounded-md p-2 w-36" <!-- Adjust the width as needed -->
-      
-    
-      <button
-        onclick="applyDiscountCode()"
-        class="bg-transparent border-2 border-black text-black hover:bg-gray-200 hover:border-black-700 hover:text-black-700 font-bold py-1 px-2 ml-2"
-      >
-        Apply Discount
-      </button>
-    </div>
-    
+  <input
+    type="text"
+    id="discountCode"
+    placeholder="Discount code"
+    class="border rounded-md p-2 w-36" <!-- Adjust the width as needed -->
+  <button
+    onclick="applyDiscountCode()"
+    class="bg-transparent border-2 border-black text-black hover:bg-gray-200 hover:border-black-700 hover:text-black-700 font-bold py-1 px-2 ml-2"
+  >
+    Apply Discount
+  </button>
+</div>
+
 
     <table class="w-full border-collapse border border-gray-300 mt-4">
       <tbody>
