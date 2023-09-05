@@ -233,6 +233,29 @@ function applyDiscountCode() {
 }
 
 
+// Code For Copy Now Button
+document.addEventListener("DOMContentLoaded", function () {
+  const copyDiscountCodeBtn = document.getElementById("copyDiscountCodeBtn");
+
+  copyDiscountCodeBtn.addEventListener("click", function () {
+    const discountCode = "Biwash07";
+
+    // Create a temporary input element to copy the text
+    const tempInput = document.createElement("input");
+    tempInput.value = discountCode;
+    document.body.appendChild(tempInput);
+
+    // Select and copy the text
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Provide user feedback (e.g., an alert or message)
+    alert(`Discount code "${discountCode}" copied to clipboard!`);
+  });
+});
 
 
     
