@@ -122,7 +122,7 @@ const Cart = [];
     }
   }
 
-
+// Code For GrandTotal
   function updateCartSlider() {
     const cartSlider = document.getElementById('cartSlider');
     const cartItemsList = document.getElementById('cartItems');
