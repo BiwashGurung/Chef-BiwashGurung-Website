@@ -208,8 +208,12 @@ function toggleCartSlider() {
 }
 
 
-
-
+const discountCode = document.getElementById('discountCode').value;
+if (discountCode === 'Biwash07') {
+    // Apply a 15% discount if the code is valid
+    const discountAmount = grandTotal * 0.15;
+    grandTotal -= discountAmount;
+}
 
     
 
