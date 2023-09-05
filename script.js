@@ -207,13 +207,31 @@ function toggleCartSlider() {
   }
 }
 
-//Code For Discount
-const discountCode = document.getElementById('discountCode').value;
-if (discountCode === 'Biwash07') {
-    // Apply a 15% discount if the code is valid
-    const discountAmount = grandTotal * 0.15;
-    grandTotal -= discountAmount;
+
+
+// Function to apply the discount code
+function applyDiscountCode() {
+  const discountCodeInput = document.getElementById('discountCode');
+  const discountCode = discountCodeInput.value;
+
+  if (discountCode === 'Biwash07') {
+      // Apply a 15% discount if the code is valid
+      const grandTotalSpan = document.getElementById('grandTotal');
+      const grandTotal = parseFloat(grandTotalSpan.textContent.replace('NPR ', ''));
+
+      const discountAmount = grandTotal * 0.15;
+      const discountedTotal = grandTotal - discountAmount;
+
+      // Update the grand total display with the discount applied
+      grandTotalSpan.textContent = `NPR ${discountedTotal.toFixed(2)}`;
+
+      // Optionally, you can disable the input field after applying the discount
+      discountCodeInput.disabled = true;
+  } else {
+      alert('Invalid discount code. Please try again.');
+  }
 }
+
 
     
 
