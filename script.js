@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove the temporary input element
     document.body.removeChild(tempInput);
 
-    // Provide user feedback (e.g., an alert or message)
+    // Provide user feedback
     alert(`Discount code "${discountCode}" copied to clipboard!`);
   });
 });
