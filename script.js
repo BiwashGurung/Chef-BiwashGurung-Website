@@ -119,49 +119,66 @@ const Cart = [];
 
 // Code For GrandTotal
 function updateCartSlider() {
-    const cartSlider = document.getElementById('cartSlider');
-    const cartItemsList = document.getElementById('cartItems');
-    const grandTotalSpan = document.getElementById('grandTotal');
-  
-    // Clear the existing cart items
-    cartItemsList.innerHTML = '';
-  
-    let grandTotal = 0; // Initialize the grand total
-  
-    // Add cart items to the list and calculate the grand total
-    cart.forEach((item, index) => {
-      const cartItem = document.createElement('li');
-      cartItem.textContent = `${item.name} - NPR ${item.price}`;
-  
-      // Add a "Clear" button for each item
-      const clearButton = document.createElement('button');
-      clearButton.textContent = 'Clear';
-      clearButton.className = 'ml-2 text-gray-500 hover:text-gray-700';
-      clearButton.onclick = () => {
-        // Remove the item from the cart when the "Clear" button is clicked
-        cart.splice(index, 1);
-        // Update the cart slider
-        updateCartSlider();
-      };
-  
-      // Append the "Clear" button to the cart item
-      cartItem.appendChild(clearButton);
-  
-      cartItemsList.appendChild(cartItem);
-  
-      grandTotal += item.price; // Add item price to the grand total
-    });
-  
-    // Update the grand total display
-    grandTotalSpan.textContent = grandTotal;
-  
-    // Toggle the cart slider visibility
-    if (cart.length > 0) {
-      cartSlider.style.transform = 'translateX(0)';
-    } else {
-      cartSlider.style.transform = 'translateX(100%)';
-    }
+  const cartSlider = document.getElementById('cartSlider');
+  const cartItemsTable = document.getElementById('cartItems');
+  const grandTotalSpan = document.getElementById('grandTotal');
+
+  // Clear the existing cart items
+  cartItemsTable.innerHTML = '';
+
+  let grandTotal = 0; // Initialize the grand total
+
+  // Add cart items to the table and calculate the grand total
+  cart.forEach((item, index) => {
+    const cartRow = document.createElement('tr');
+
+    // Add S.No (index + 1)
+    const cartSNo = document.createElement('td');
+    cartSNo.textContent = index + 1;
+
+    // Add item name
+    const cartName = document.createElement('td');
+    cartName.textContent = item.name;
+
+    // Add item price
+    const cartPrice = document.createElement('td');
+    cartPrice.textContent = `NPR ${item.price}`;
+
+    // Add a "Clear" button for each item
+    const clearButton = document.createElement('td');
+    const clearButtonElement = document.createElement('button');
+    clearButtonElement.textContent = 'Clear';
+    clearButtonElement.className = 'text-gray-500 hover:text-gray-700';
+    clearButtonElement.onclick = () => {
+      // Remove the item from the cart when the "Clear" button is clicked
+      cart.splice(index, 1);
+      // Update the cart slider
+      updateCartSlider();
+    };
+    clearButton.appendChild(clearButtonElement);
+
+    // Append all columns to the row
+    cartRow.appendChild(cartSNo);
+    cartRow.appendChild(cartName);
+    cartRow.appendChild(cartPrice);
+    cartRow.appendChild(clearButton);
+
+    cartItemsTable.appendChild(cartRow);
+
+    grandTotal += item.price; // Add item price to the grand total
+  });
+
+  // Update the grand total display
+  grandTotalSpan.textContent = grandTotal;
+
+  // Toggle the cart slider visibility
+  if (cart.length > 0) {
+    cartSlider.style.transform = 'translateX(0)';
+  } else {
+    cartSlider.style.transform = 'translateX(100%)';
   }
+}
+
   
 
 // Thankyou Alert Message

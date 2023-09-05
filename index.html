@@ -455,23 +455,38 @@
         Close
       </button>
     </div>
-    <ul id="cartItems">
-      <!-- Cart items will be dynamically added here -->
-    </ul>
+    <table class="w-full mb-4">
+      <thead>
+        <tr>
+          <th class="py-1 px-2 text-left">#</th>
+          <th class="py-1 px-2 text-left">Name</th>
+          <th class="py-1 px-2 text-right">Price</th>
+          <th class="py-1 px-2 text-right">Clear</th>
+        </tr>
+      </thead>
+      <tbody id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+      </tbody>
+    </table>
     <div class="mt-4">
       <span class="text-gray-900 font-medium">Grand Total: NPR <span id="grandTotal">0</span></span>
     </div>
     <button
-  onclick="showThankYouMessage()"
-  class="bg-transparent border-2 border-black hover:bg-gray-200 hover:text-black hover:border-black-700 text-black font-bold py-1 px-2 rounded-none mt-4"
->
-  Place Order
+    onclick="showThankYouMessage()"
+    class="bg-transparent border-2 border-black hover:bg-gray-200 hover:text-black hover:border-black-700 text-black font-bold py-1 px-2 rounded-none mt-4"
+    >
+    Place Order
   </div>
 </div>
+
 <!---------------------------------------------- Add to cart start ends HEre ------------------------------------------------------------->
 
 
-
+<button
+onclick="showThankYouMessage()"
+class="bg-transparent border-2 border-black hover:bg-gray-200 hover:text-black hover:border-black-700 text-black font-bold py-1 px-2 rounded-none mt-4"
+>
+Place Order
 
 <!-- ----------------------------------------------------- About Our Achievements Start From Here -------------------------------->
 <div class="bg-gray-200 p-6">
