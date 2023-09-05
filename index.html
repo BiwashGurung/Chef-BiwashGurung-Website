@@ -468,6 +468,23 @@
         <!-- Cart items will be dynamically added here -->
       </tbody>
     </table>
+    
+    <!-- code for the discount code input -->
+    <input
+        type="text"
+        id="discountCode"
+        placeholder="Enter discount code"
+        class="border rounded-md p-2 w-full mt-2"
+    />
+
+    <!--  code for the "Apply Discount" button -->
+    <button
+      onclick="applyDiscountCode()"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mt-2"
+      >
+    Apply Discount
+    </button>
+
     <table class="w-full border-collapse border border-gray-300 mt-4">
       <tbody>
         <tr>
@@ -487,23 +504,6 @@
     >
       Place Order
     </button>
-
-    <!-- code for the discount code input -->
-    <input
-        type="text"
-        id="discountCode"
-        placeholder="Enter discount code"
-        class="border rounded-md p-2 w-full mt-2"
-    />
-
-    <!--  code for the "Apply Discount" button -->
-    <button
-      onclick="applyDiscountCode()"
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mt-2"
-      >
-    Apply Discount
-    </button>
-
   
   </div>
 </div>
