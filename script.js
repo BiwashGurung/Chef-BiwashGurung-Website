@@ -270,3 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
   
+function login() {
+  // Redirect to index.html after a "successful" login
+  window.location.href = "index.html";
+}
