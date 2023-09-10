@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login and Signup</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl">Login</h2>
-
-            <form id="login-form" class="mx-auto max-w-lg rounded-lg border">
-                <div class="flex flex-col gap-4 p-4 md:p-8">
-                    <div>
-                        <label for="email" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Email</label>
-                        <input name="email" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
-                    </div>
-
-                    <div>
-                        <label for="password" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Password</label>
-                        <input name="password" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
-                    </div>
-
-                    <button id="login-button" class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">Log in</button>
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h1 class="text-2xl font-semibold mb-4 text-center">Login or Sign Up</h1>
+            
+            <!-- Tabs for Login and Sign Up -->
+            <div class="flex mb-4">
+                <button id="login-tab" class="flex-1 text-center text-gray-600 py-2 px-4 border-b-2 border-gray-300 focus:outline-none">Login</button>
+                <button id="signup-tab" class="flex-1 text-center text-gray-600 py-2 px-4 focus:outline-none">Sign Up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login-form" class="form">
+                <div class="mb-4">
+                    <label for="login-email" class="block text-sm font-medium text-gray-600">Email</label>
+                    <input type="email" id="login-email" name="login-email" class="form-input" required>
                 </div>
+                <div class="mb-6">
+                    <label for="login-password" class="block text-sm font-medium text-gray-600">Password</label>
+                    <input type="password" id="login-password" name="login-password" class="form-input" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none">Login</button>
+            </form>
+            
+            <!-- Signup Form -->
+            <form id="signup-form" class="form hidden">
+                <div class="mb-4">
+                    <label for="signup-name" class="block text-sm font-medium text-gray-600">Name</label>
+                    <input type="text" id="signup-name" name="signup-name" class="form-input" required>
+                </div>
+                <div class="mb-4">
+                    <label for="signup-email" class="block text-sm font-medium text-gray-600">Email</label>
+                    <input type="email" id="signup-email" name="signup-email" class="form-input" required>
+                </div>
+                <div class="mb-6">
+                    <label for="signup-password" class="block text-sm font-medium text-gray-600">Password</label>
+                    <input type="password" id="signup-password" name="signup-password" class="form-input" required>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none">Sign Up</button>
             </form>
         </div>
     </div>

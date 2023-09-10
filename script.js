@@ -269,21 +269,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 document.addEventListener('DOMContentLoaded', () => {
+  // Switch between Login and Sign Up forms
+  const loginTab = document.getElementById('login-tab');
+  const signupTab = document.getElementById('signup-tab');
   const loginForm = document.getElementById('login-form');
-  const loginButton = document.getElementById('login-button');
+  const signupForm = document.getElementById('signup-form');
 
+  loginTab.addEventListener('click', () => {
+      signupForm.classList.add('hidden');
+      loginForm.classList.remove('hidden');
+      loginTab.classList.add('border-b-2', 'border-gray-300');
+      signupTab.classList.remove('border-b-2', 'border-gray-300');
+  });
+
+  signupTab.addEventListener('click', () => {
+      loginForm.classList.add('hidden');
+      signupForm.classList.remove('hidden');
+      signupTab.classList.add('border-b-2', 'border-gray-300');
+      loginTab.classList.remove('border-b-2', 'border-gray-300');
+  });
+
+  // Handle form submission (you can add your AJAX code here for real validation)
   loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      // Add your login logic here
+  });
 
-      // Simulate a successful login (replace this with your actual login logic)
-      const isLoggedIn = true; // Change to true if login is successful
-
-      if (isLoggedIn) {
-          // Redirect to index.html after successful login
-          window.location.href = 'index.html';
-      } else {
-          // Handle login failure (show an error message, etc.)
-          alert('Login failed. Please check your credentials.');
-      }
+  signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Add your sign-up logic here
   });
 });
+
