@@ -268,3 +268,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     
+document.addEventListener('DOMContentLoaded', () => {
+  const loginForm = document.getElementById('login-form');
+  const loginButton = document.getElementById('login-button');
+
+  loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Simulate a successful login (replace this with your actual login logic)
+      const isLoggedIn = true; // Change to true if login is successful
+
+      if (isLoggedIn) {
+          // Redirect to index.html after successful login
+          window.location.href = 'index.html';
+      } else {
+          // Handle login failure (show an error message, etc.)
+          alert('Login failed. Please check your credentials.');
+      }
+  });
+});
