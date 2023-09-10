@@ -268,8 +268,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     
-function redirectToIndex() {
-  // Redirect to index.html after clicking "Log in"
-  window.location.href = "index.html";
-}
-  
