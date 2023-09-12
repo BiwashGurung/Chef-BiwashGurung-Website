@@ -15,14 +15,14 @@
         <input type="checkbox" id="check" class="hidden">
         <div class="login-form">
             <header class="text-2xl font-semibold text-center mb-6">Login</header>
-            <form action="#" class="mb-6">
-                <input type="text" placeholder="Enter your email"
+            <form id="loginForm" action="#">
+                <input type="text" id="loginEmail" placeholder="Enter your email"
                     class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
-                <input type="password" placeholder="Enter your password"
+                <input type="password" id="loginPassword" placeholder="Enter your password"
                     class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
                 <a href="#" class="text-blue-500 text-sm hover:underline block mb-4">Forgot password?</a>
                 <input type="button" class="w-full h-12 bg-black text-white text-xl font-semibold rounded-lg cursor-pointer transition duration-300 hover:bg-white hover:text-black"
-                    value="Login">
+                    value="Login" onclick="simulateLogin()">
             </form>
             <div class="signup text-center">
                 <span class="text-base">Don't have an account?
@@ -33,15 +33,15 @@
 
         <div class="registration-form hidden">
             <header class="text-2xl font-semibold text-center mb-6">Signup</header>
-            <form action="#" class="mb-6">
-                <input type="text" placeholder="Enter your email"
+            <form id="signupForm" action="#">
+                <input type="text" id="signupEmail" placeholder="Enter your email"
                     class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
-                <input type="password" placeholder="Create a password"
+                <input type="password" id="signupPassword" placeholder="Create a password"
                     class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
-                <input type="password" placeholder="Confirm your password"
+                <input type="password" id="confirmPassword" placeholder="Confirm your password"
                     class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
                 <input type="button" class="w-full h-12 bg-black text-white text-xl font-semibold rounded-lg cursor-pointer transition duration-300 hover:bg-white hover:text-black"
-                    value="Signup">
+                    value="Signup" onclick="simulateSignup()">
             </form>
             <div class="signup text-center">
                 <span class="text-base">Already have an account?
