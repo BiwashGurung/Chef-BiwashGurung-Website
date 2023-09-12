@@ -51,7 +51,22 @@
         </div>
     </div>
 
- 
+    <script>
+        // JavaScript to toggle between login and signup forms
+        const check = document.getElementById('check');
+        const loginForm = document.querySelector('.login-form');
+        const registrationForm = document.querySelector('.registration-form');
+
+        check.addEventListener('change', () => {
+            if (check.checked) {
+                loginForm.classList.add('hidden');
+                registrationForm.classList.remove('hidden');
+            } else {
+                loginForm.classList.remove('hidden');
+                registrationForm.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 
 </html>
