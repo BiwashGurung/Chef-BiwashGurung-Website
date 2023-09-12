@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login & Sign Up Form</title>
+    <title>Login </title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -52,6 +52,24 @@
     </div>
 
     <script>
+          function simulateLogin() {
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+        alert(`Simulated Login - Email: ${email}, Password: ${password}`);
+    }
+
+    function simulateSignup() {
+        const email = document.getElementById('signupEmail').value;
+        const password = document.getElementById('signupPassword').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match. Please try again.");
+            return;
+        }
+
+        alert(`Simulated Signup - Email: ${email}, Password: ${password}`);
+    }
         function simulateLogin() {
             const email = document.getElementById('loginEmail').value;
             const password = document.getElementById('loginPassword').value;
