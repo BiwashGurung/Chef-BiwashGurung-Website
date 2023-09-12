@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login & Sign Up Form</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-whitesmoke min-h-screen flex items-center justify-center">
+    <div class="container max-w-sm w-full bg-white rounded-lg shadow-lg p-8">
+        <input type="checkbox" id="check" class="hidden">
+        <div class="login-form">
+            <header class="text-2xl font-semibold text-center mb-6">Login</header>
+            <form action="#" class="mb-6">
+                <input type="text" placeholder="Enter your email"
+                    class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
+                <input type="password" placeholder="Enter your password"
+                    class="w-full h-12 px-4 py-2 border rounded-lg mb-4 outline-none focus:border-blue-500">
+                <a href="#" class="text-blue-500 text-sm hover:underline block mb-4">Forgot password?</a>
+                <input type="button" class="w-full h-12 bg-black text-white text-xl font-semibold rounded-lg cursor-pointer transition duration-300 hover:bg-white hover:text-black"
+                    value="Login">
+            </form>
+            <div class="signup text-center">
+                <span class="text-base">Don't have an account?
+                    <label for="check" class="text-blue-500 cursor-pointer">Signup</label>
+                </span>
+            </div>
+        </div>
+
+        
+    </div>
+
+ 
+</body>
+
+</html>
