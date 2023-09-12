@@ -52,21 +52,21 @@
     </div>
 
     <script>
-        // JavaScript to toggle between login and signup forms
-        const check = document.getElementById('check');
-        const loginForm = document.querySelector('.login-form');
-        const registrationForm = document.querySelector('.registration-form');
-
-        check.addEventListener('change', () => {
-            if (check.checked) {
-                loginForm.classList.add('hidden');
-                registrationForm.classList.remove('hidden');
+        function simulateLogin() {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+    
+            const isLoggedIn = true;
+    
+            if (isLoggedIn) {
+                // Redirect to index.html
+                window.location.href = 'index.html';
             } else {
-                loginForm.classList.remove('hidden');
-                registrationForm.classList.add('hidden');
+                alert('Login failed. Please check your credentials.');
             }
-        });
+        }
     </script>
+    
 </body>
 
 </html>
