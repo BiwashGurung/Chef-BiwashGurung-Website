@@ -11,7 +11,6 @@
 </head>
 
 <body class="bg-whitesmoke min-h-screen flex items-center justify-center bg-cover" style="background-image: url('https://thumbs.dreamstime.com/b/fast-food-concept-greasy-fried-restaurant-take-out-as-onion-rings-burger-hot-dogs-fried-chicken-french-fries-31114163.jpg');">
-
     <div class="container max-w-sm w-full bg-white rounded-lg shadow-lg p-8">
         <input type="checkbox" id="check" class="hidden">
         <div class="login-form">
@@ -27,7 +26,7 @@
             </form>
             <div class="signup text-center">
                 <span class="text-base">Don't have an account?
-                    <label for="check" class="text-blue-500 cursor-pointer">Signup</label>
+                    <label for="check" class="text-blue-500 cursor-pointer" onclick="toggleForms()">Signup</label>
                 </span>
             </div>
         </div>
@@ -46,37 +45,28 @@
             </form>
             <div class="signup text-center">
                 <span class="text-base">Already have an account?
-                    <label for="check" class="text-blue-500 cursor-pointer">Login</label>
+                    <label for="check" class="text-blue-500 cursor-pointer" onclick="toggleForms()">Login</label>
                 </span>
             </div>
         </div>
     </div>
 
     <script>
-          function simulateLogin() {
-        const email = document.getElementById('loginEmail').value;
-        const password = document.getElementById('loginPassword').value;
-        alert(`Simulated Login - Email: ${email}, Password: ${password}`);
-    }
+        function toggleForms() {
+            const loginForm = document.querySelector('.login-form');
+            const signupForm = document.querySelector('.registration-form');
 
-    function simulateSignup() {
-        const email = document.getElementById('signupEmail').value;
-        const password = document.getElementById('signupPassword').value;
-        const confirmPassword = document.getElementById('confirmPassword').value;
-
-        if (password !== confirmPassword) {
-            alert("Passwords do not match. Please try again.");
-            return;
+            loginForm.classList.toggle('hidden');
+            signupForm.classList.toggle('hidden');
         }
 
-        alert(`Simulated Signup - Email: ${email}, Password: ${password}`);
-    }
         function simulateLogin() {
             const email = document.getElementById('loginEmail').value;
             const password = document.getElementById('loginPassword').value;
-    
+
+         
             const isLoggedIn = true;
-    
+
             if (isLoggedIn) {
                 // Redirect to index.html
                 window.location.href = 'index.html';
@@ -84,8 +74,23 @@
                 alert('Login failed. Please check your credentials.');
             }
         }
+
+        function simulateSignup() {
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            
+            const isSignupSuccessful = true;
+
+            if (isSignupSuccessful) {
+                // Redirect to index.html
+                window.location.href = 'index.html';
+            } else {
+                alert('Signup failed. Please try again.');
+            }
+        }
     </script>
-    
 </body>
 
 </html>
