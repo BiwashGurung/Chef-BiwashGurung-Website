@@ -10,7 +10,7 @@
 
 <p><strong><em>The homepage features a captivating background video that plays in an endless loop, creating an immersive atmosphere. The site prominently displays the restaurant's name, "Biwash's Culinary Haven," and contact reservations number.</em></strong</p>
 
-<p><strong><em></em></strong</p>
+<p><strong><em>The "Our Specials" section highlights three beloved dishes: Dim Sums, Fried Noodle, and Fried Rice, each accompanied by detailed descriptions.</em></strong</p>
 
 <p><strong><em></em></strong</p>
 
