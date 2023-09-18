@@ -16,6 +16,10 @@
 
 <p><strong><em>The "Menu" section presents 12 delectable items, each with an image, brief description, price, and an "Add to Cart" button. The menu includes options like Chicken Pizza, Sushi, Taco, Burger, Momo, Sandwich, Pinoy Spaghetti, Sesame Chicken Fry, Thakali Khana Set, Thukpa, Chicken Manchurian, and Fried Rice</em></strong</p>
 
+<p><strong><em>The "About Our Achievements" banner showcases the restaurant's milestones, including a dedicated team, satisfied customers served, happy guests, and 5-star ratings.</em></strong</p>
+
+<p><strong><em></em></strong</p>
+
 <p><strong><em></em></strong</p>
 
 
