@@ -8,7 +8,7 @@
 
 <p><strong><em>The navigation bar includes an "Order Online Now" button that smoothly scrolls the user down to the Menu section for quick ordering. Additionally, there's an "Add to Cart" button that opens a right-side slider displaying a table of items added to the cart. Users can apply a discount code for a 15% discount on the total price, view the grand total, and proceed to checkout.</em></strong</p>
 
-<p><strong><em></em></strong</p>
+<p><strong><em>The homepage features a captivating background video that plays in an endless loop, creating an immersive atmosphere. The site prominently displays the restaurant's name, "Biwash's Culinary Haven," and contact reservations number.</em></strong</p>
 
 <p><strong><em></em></strong</p>
 
