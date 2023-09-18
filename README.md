@@ -18,7 +18,7 @@
 
 <p><strong><em>The "About Our Achievements" banner showcases the restaurant's milestones, including a dedicated team, satisfied customers served, happy guests, and 5-star ratings.</em></strong</p>
 
-<p><strong><em></em></strong</p>
+<p><strong><em>The "Chef" section introduces Chef Biwash Gurung, shining a spotlight on his culinary expertise and illustrious career. Notably, Chef Biwash honed his craft during a prestigious tenure at the renowned 5-star hotel, Pokhara Grande, where he further refined his culinary artistry. Accompanied by a captivating photo of the chef, this section underscores his exceptional contributions to the culinary world.</em></strong</p>
 
 <p><strong><em></em></strong</p>
 
