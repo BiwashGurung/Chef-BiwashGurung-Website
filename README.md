@@ -14,7 +14,7 @@
 
 <p><strong><em>The "About Us" section narrates the story of the restaurant, emphasizing Chef Biwash's passion for food and flavor. It highlights the fusion of tradition and innovation in the menu, crafted with precision and love. Users can copy a 15% discount code to apply to their orders from a banner beneath this section.</em></strong</p>
 
-<p><strong><em></em></strong</p>
+<p><strong><em>The "Menu" section presents 12 delectable items, each with an image, brief description, price, and an "Add to Cart" button. The menu includes options like Chicken Pizza, Sushi, Taco, Burger, Momo, Sandwich, Pinoy Spaghetti, Sesame Chicken Fry, Thakali Khana Set, Thukpa, Chicken Manchurian, and Fried Rice</em></strong</p>
 
 <p><strong><em></em></strong</p>
 
