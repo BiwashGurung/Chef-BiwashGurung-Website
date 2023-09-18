@@ -20,6 +20,12 @@
 
 <p><strong><em>The "Chef" section introduces Chef Biwash Gurung, shining a spotlight on his culinary expertise and illustrious career. Notably, Chef Biwash honed his craft during a prestigious tenure at the renowned 5-star hotel, Pokhara Grande, where he further refined his culinary artistry. Accompanied by a captivating photo of the chef, this section underscores his exceptional contributions to the culinary world.</em></strong</p>
 
+<p><strong><em>Finally, the "Contact" section includes a "Get in touch with us" title, a paragraph emphasizing assistance, and a contact form with fields for name, email, phone number, and message, along with a "Send" button. A map of Pokhara's location is provided, and users can also email inquiries directly.
+
+</em></strong</p>
+
+<p><strong><em></em></strong</p>
+
 <p><strong><em></em></strong</p>
 
 
