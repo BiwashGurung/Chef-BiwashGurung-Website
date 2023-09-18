@@ -12,7 +12,7 @@
 
 <p><strong><em>The "Our Specials" section highlights three beloved dishes: Dim Sums, Fried Noodle, and Fried Rice, each accompanied by detailed descriptions.</em></strong</p>
 
-<p><strong><em></em></strong</p>
+<p><strong><em>The "About Us" section narrates the story of the restaurant, emphasizing Chef Biwash's passion for food and flavor. It highlights the fusion of tradition and innovation in the menu, crafted with precision and love. Users can copy a 15% discount code to apply to their orders from a banner beneath this section.</em></strong</p>
 
 <p><strong><em></em></strong</p>
 
