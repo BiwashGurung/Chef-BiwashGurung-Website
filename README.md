@@ -24,9 +24,9 @@
 
 </em></strong</p>
 
-<p><strong><em></em></strong</p>
+<p><strong><em>The footer contains the website logo and the copyright notice, "© 2023 All Rights Reserved." Biwash's Culinary Haven offers a complete online experience, from exploring the menu to contacting the restaurant for inquiries or reservations.</em></strong</p>
 
-<p><strong><em></em></strong</p>
+
 
 
 <h3>To access or review the project, please click on the provided link below:</h3>
