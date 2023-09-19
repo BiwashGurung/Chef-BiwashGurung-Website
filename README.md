@@ -1,6 +1,6 @@
 <h1 align="center"> Biwash's Culinary Haven </h1>
 <h2 align="center">Made with Html , Tailwind CSS and javaScript</h2>
-<p>"Please click here for a live viewing."</p><a href="https://biwashgurung.github.io/Chef-BiwashGurung-Website/"><strong>➥ Live Demo</strong></a>
+<a href="https://biwashgurung.github.io/Chef-BiwashGurung-Website/"><strong>➥ Live Demo</strong></a>
 
 <h3 align="center">Providing information about this website.</h3>
 <img src="./Images/web img.png">
