@@ -56,7 +56,7 @@ document.querySelector("footer .footer-year").textContent =
       // Add cart items to the list
       cart.forEach((item) => {
         const cartItem = document.createElement('li');
-        cartItem.textContent = `${item.name} - NPR ${item.price}`;
+        cartItem.textContent = `${item.name} -  ${item.price}`;
         cartItemsList.appendChild(cartItem);
       });
     
